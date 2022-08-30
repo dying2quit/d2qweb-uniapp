@@ -5,6 +5,7 @@
       <text class="title">{{ title }}</text>
     </view>
   </view>
+  <uni-badge text="uni-ui imported"></uni-badge>
 </template>
 
 <script setup lang="ts">
