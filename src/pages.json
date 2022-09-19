@@ -1,23 +1,85 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
+//		{
+//			"path": "pages/index/index",
+//			"style": {
+//				"navigationBarTitleText": "或成"
+//			}
+//		}
+	    {
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+//                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/qifou/qifou",
+            "style" :                                                                                    
+            {
+//                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/square/square",
+            "style" :                                                                                    
+            {
+//                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+        ,{
+          "path" : "pages/user/user",
+          "style" :
+          {
+//            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+
+        }
+    ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "dying 2 quit",
+    "navigationBarBackgroundColor": "#11AA99",
+    "backgroundColor": "#F8F8F8",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
 	"easycom": {
 		"autoscan": true,
 		"custom": {
 			// uni-ui 规则如下配置
 			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
 		}
-	}
+	},
+  "tabBar": {
+    "iconfontSrc": "static/iconfont.ttf",
+    "selectedColor": "#11AA99",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "弃否",
+        "iconPath": "static/tab_icons/qifou.png",
+        "selectedIconPath": "static/tab_icons/qifou2.png"
+      },
+      {
+        "pagePath": "pages/square/square",
+        "text": "广场",
+        "iconPath": "static/tab_icons/square.png",
+        "selectedIconPath": "static/tab_icons/square2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/tab_icons/user.png",
+        "selectedIconPath": "static/tab_icons/user2.png"
+      }
+    ]
+  }
 }
